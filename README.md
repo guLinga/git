@@ -89,3 +89,22 @@ git remote remove [remote-url] / git remote rm [remote-name]
 # 修改远程仓库名称
 git remote rename [old-remote-name] [new-remote-name]
 ```
+
+### git配置
+
+```shell
+# 显示当前的git配置
+git config --list
+git config -l
+
+git config --list --global
+git config -l --global
+
+# 编辑git配置文件
+git config -e
+git config -e --global
+
+# 设置提交时的用户信息
+git config user.name [name] --golbal
+git config user.email [email] --global
+```
