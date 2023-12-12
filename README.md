@@ -108,3 +108,43 @@ git config -e --global
 git config user.name [name] --golbal
 git config user.email [email] --global
 ```
+
+### 暂存区
+
+```shell
+# 添加指定文件到暂存区
+git add [file1-name] [file2-name]
+
+# 添加指定目录到暂存区，包括子目录
+git add [dir]
+
+# 添加当前目录的所有文件到暂存区
+git add .
+
+# 添加每个变化前，都会要求确认
+# 对于同一个文件的多处变化，可以实现分次提交
+git add -p
+git add [file-name] -p
+## 如果使用了git add -p终端会有以下输出
+## Stage this hunk [y,n,q,a,d,e,?]?
+## 具体字母代表的什么会在下面介绍
+```
+
+### git add -p
+
+|名称|英文介绍|中文介绍|
+|----|----|----|
+|y|stage this hunk|存储这个hunk|
+|n|do not stage this hunk|不存储这个hunk|
+|q|quit; do not stage this hunk nor any of the remaining ones|离开，不存储这个hunk和其他hunk|
+|a|stage this hunk and all later hunks in the file|存储这个hunk和这个文件后面的hunk|
+|d|do not stage this hunk nor any of the later hunks in the file|不存储这个hunk和这个文件后面的hunk|
+|g|select a hunk to go to|选择一个hunk|
+|/|search for a hunk matching the given regex|通过正则查找hunk|
+|j|leave this hunk undecided, see next undecided hunk|不确定是否存储这个hunk，看下一个不确定的hunk|
+|J|leave this hunk undecided, see next hunk|不确定是否存储这个hunk，看下一个hunk|
+|k|leave this hunk undecided, see previous undecided hunk|不确定是否存储这个hunk，看上一个不确定的hunk|
+|K|leave this hunk undecided, see previous hunk|不确定是否存储这个hunk，看上一个hunk|
+|s|split the current hunk into smaller hunks|把当前的hunk分成更小的hunks|
+|e|manually edit the current hunk|手动编辑当前的hunk|
+|?|print help|输出帮助信息|
