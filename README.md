@@ -48,4 +48,19 @@ git checkout [branch-name]
 
 # 新建分支并切换
 git checkout -b [branch-name]
+
+# 发布本地分支
+git checkout [branch-name]
+git push -u [origin] [branch-name]
+
+# 删除本地分支
+# 首先切换到其他分支
+git checkout [main]
+# 删除本地分支 如果这个分支包含了一些还没有合并到其他任何位置的更改, Git 会拒绝删除
+git branch -d [branch-name]
+# 强制删除本地分支
+git branch -D [branch-name]
+
+# 删除远程分支
+git push -d [origin] [branch-name]
 ```
