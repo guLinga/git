@@ -64,3 +64,19 @@ git branch -D [branch-name]
 # 删除远程分支
 git push -d [origin] [branch-name]
 ```
+
+### git仓库
+
+```shell
+# 查看已有的远程仓库
+git remote -v
+
+# 添加远程仓库
+git remote add [remote-name] [remote-url]
+
+# 删除远程仓库
+git remote remove [remote-url] / git remote rm [remote-name]
+
+# 修改远程仓库名称
+git remote rename [old-remote-name] [new-remote-name]
+```
