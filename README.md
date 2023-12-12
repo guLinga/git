@@ -63,6 +63,15 @@ git branch -D [branch-name]
 
 # 删除远程分支
 git push -d [origin] [branch-name]
+
+# 修改本地和远程分支名称
+## 修改本地分支的名称
+git branch -m [old-branch-name] [new-branch-name]
+### 如果目前所在的分支就是要修改名称的分支则不需要输入[old-branch-name]
+## 删除旧的远程分支
+git push -d [origin] [old-branch-name]
+## 将改过名的本地分支推送到远程
+git push -u [origin] [old-branch-name]
 ```
 
 ### git仓库
