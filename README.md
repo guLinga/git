@@ -1,7 +1,5 @@
 ## git命令
 
-### 
-
 Workspace：工作区
 Index / Stage：暂存区
 Repository：本地仓库区
