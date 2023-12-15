@@ -41,6 +41,10 @@ git branch -a
 # 新建本地分支
 git branch [branch-name]
 
+# 新建一个不包含原本分支历史记录的分支
+git branch --orphan [branch-name]
+## 如果branch-name是gh-pages，并且该分支下有index.html文件，那么github会将这个分支发布到pages功能
+
 # 切换分支
 git checkout [branch-name]
 
