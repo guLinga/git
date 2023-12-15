@@ -159,3 +159,13 @@ git reset
 git checkout -- [file-name]
 git checkout -- .
 ```
+
+### 本地仓库区
+```shell
+# 提交代码到本地仓库区
+git commit -m [commit-message]
+git commit [file1-name] [file2-name] -m [commit-message]
+
+# 合并 git add .和git commit -m的操作
+git commit -am [commit-message]
+```
