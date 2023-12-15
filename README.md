@@ -181,3 +181,40 @@ git commit --amend -m [message]
 # 撤销所有的还没push的commit
 git reset --soft origin/[branch-name]
 ```
+
+### 标签
+```shell
+# 列出本地所有的tag
+git tag
+
+# 列出远程仓库所有的tag
+git ls-remote --tags [remote-name]
+
+新建一个tag在当前commit
+$ git tag [tag]
+
+# 新建一个tag在指定commit
+git tag [tag] [commit]
+
+# 删除本地的tag
+git tag -d [tag-name]
+
+git push origin :refs/tags/[tagName]
+
+# 查看tag信息
+git show [tag]
+
+# 提交指定tag
+git push [remote] [tag]
+
+# 提交全部的tag
+git push [remote] --tag
+
+# 新建一个分支指向某个tag
+git checkout -b [branch-name] [tag-name]
+
+# 切换到tag对应的代码状态
+git checkout [tag-name]
+## 如果分支名和tag名一样
+git checkout refs/tags/[tag-name]
+```
