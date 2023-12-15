@@ -216,3 +216,20 @@ git checkout [tag-name]
 ## 如果分支名和tag名一样
 git checkout refs/tags/[tag-name]
 ```
+
+### 暂存
+
+```shell
+# 将暂时不想提交的同时暂存起来
+git stash
+git stash save [message]
+
+# 取消暂存
+git stash pop
+
+# 查看git stash的信息
+git stash list
+
+# 查看stash修改了哪些内容
+git stash show -p stash@{n}
+```
