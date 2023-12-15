@@ -110,7 +110,7 @@ git config -e
 git config -e --global
 
 # 设置提交时的用户信息
-git config user.name [name] --golbal
+git config user.name [name] --global
 git config user.email [email] --global
 ```
 
@@ -163,6 +163,10 @@ git reset
 # 撤销在工作区修改的内容
 git checkout -- [file-name]
 git checkout -- .
+## 只能撤销已被跟踪的文件
+
+# 删除所有未被跟踪的文件
+git clean -fd
 ```
 
 ### 本地仓库区
