@@ -72,6 +72,9 @@ git branch -m [old-branch-name] [new-branch-name]
 git push -d [origin] [old-branch-name]
 ## 将改过名的本地分支推送到远程
 git push -u [origin] [old-branch-name]
+
+# 合并分支到当前分支
+git merge [branch-name]
 ```
 
 ### git仓库
