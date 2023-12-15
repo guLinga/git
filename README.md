@@ -128,6 +128,10 @@ git add [file-name] -p
 ## 如果使用了git add -p终端会有以下输出
 ## Stage this hunk [y,n,q,a,d,e,?]?
 ## 具体字母代表的什么会在下面介绍
+
+# 将git add后还没commit的数据从暂存区移
+git reset [file-name]
+git reset
 ```
 
 ### git add -p
