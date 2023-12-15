@@ -134,6 +134,13 @@ git reset [file-name]
 git reset
 ```
 
+### 工作区
+```shell
+# 撤销在工作区修改的内容
+git checkout -- [file-name]
+git checkout -- .
+```
+
 ### git add -p
 
 |名称|英文介绍|中文介绍|
