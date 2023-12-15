@@ -14,7 +14,7 @@ Remote：远程仓库
 git init
 
 # 新建一个目录 将其初始化成git代码仓库
-git init [projetc-name]
+git init [project-name]
 
 # 下载一个项目和它的整个代码历史
 git clone [url]
