@@ -168,4 +168,10 @@ git commit [file1-name] [file2-name] -m [commit-message]
 
 # 合并 git add .和git commit -m的操作
 git commit -am [commit-message]
+
+# 改写上一次commit的信息
+git commit --amend -m [message]
+## git commit -amend -m [message]是使用一次新的commit，替代上一次提交
+## 如果代码没有任何新变化，则用来改写上一次commit的提交信息
+## 所以，如果想要改写上一次commit的信息，代码不能做任何更新
 ```
