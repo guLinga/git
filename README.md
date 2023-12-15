@@ -42,8 +42,9 @@ git branch -a
 git branch [branch-name]
 
 # 新建一个不包含原本分支历史记录的分支
-git branch --orphan [branch-name]
+git checkout --orphan [branch-name]
 ## 如果branch-name是gh-pages，并且该分支下有index.html文件，那么github会将这个分支发布到pages功能
+## 新建的orphan分支如果没有commit一个内容，git branch -a是无法查看到这个分支的
 
 # 切换分支
 git checkout [branch-name]
@@ -73,7 +74,7 @@ git branch -m [old-branch-name] [new-branch-name]
 ## 删除旧的远程分支
 git push -d [origin] [old-branch-name]
 ## 将改过名的本地分支推送到远程
-git push -u [origin] [old-branch-name]
+git push -u [origin] [new-branch-name]
 
 # 合并分支到当前分支
 git merge [branch-name]
